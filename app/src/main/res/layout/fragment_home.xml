@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.pages.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp">
+
+        <ImageView
+            android:id="@+id/theme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_theme"
+            android:contentDescription="@string/images_for_app_ui" />
+
+        <ImageView
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_170sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/images_for_app_ui"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_page_girl" />
+
+        <ImageView
+            android:id="@+id/wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/images_for_app_ui"
+            android:scaleX="2"
+            android:scaleY="1.5"
+            android:src="@drawable/wave" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fontFamily="@font/archivo_black"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17ssp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_name"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:letterSpacing="0.1"
+            android:text="@string/hello"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17ssp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:contentDescription="@string/subject_names"
+            android:elevation="10dp"
+            app:tabIconTint="@color/blue_theme"
+            app:tabIndicatorColor="#EC16145E"
+            app:tabIndicatorFullWidth="true"
+            app:tabInlineLabel="true"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/blue_theme">
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/subject_fragment_container"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

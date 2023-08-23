@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.activity.MainActivity">
+
+
+    <com.yourapps.your_chse_guide.functions.view.NonScrollableViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@color/white"
+        android:contentDescription="@string/main_view_pager" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+                android:id="@+id/bottomNavigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                app:mbn_backgroundBottomColor="#FFFFFF"
+                app:mbn_circleColor="#ffffff"
+                app:mbn_countBackgroundColor="#ff6f00"
+                app:mbn_countTextColor="#ffffff"
+                app:mbn_defaultIconColor="#90a4ae"
+                app:mbn_rippleColor="#2f424242"
+                app:mbn_selectedIconColor="#3c415e"
+                app:mbn_shadowColor="#1f212121" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

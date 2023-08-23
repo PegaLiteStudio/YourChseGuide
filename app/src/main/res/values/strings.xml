@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Your CHSE Guide</string>
+
+    <string name="images_for_app_ui">images for app ui</string>
+    <string name="study_quote">Don\'t expect the results without the\nwork.The only place where success\ncomes before work is in the dictionary</string>
+    <string name="subject_names">Subject Names</string>
+    <string name="subject_fragment_container">Subject Fragment Container</string>
+    <string name="share_app">Share App</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="rate_app">Rate App</string>
+    <string name="search">Search by topic or subject</string>
+    <string name="newVID">New</string>
+    <string name="trending">Trending</string>
+    <string name="playlists">Playlists</string>
+    <string name="your_tube">YourTube</string>
+    <string name="loading">Loading…</string>
+    <string name="main_view_pager">Main view Pager which contains all fragments</string>
+    <string name="can_t_find_anything">Can\'t Find anything</string>
+    <string name="hello">Hello!</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
